@@ -1,0 +1,170 @@
+How to Run Flixly Locally
+1. Prerequisites
+
+Before you start, ensure you have the following installed on your computer:
+
+Node.js (v14+ recommended)
+
+npm (comes with Node.js)
+
+A modern web browser (Chrome, Firefox, Edge, etc.)
+
+2. Clone the Repository
+
+Clone the project from GitHub to your local machine:
+
+git clone <your-repository-url>
+cd <your-repository-folder>
+
+3. Project Structure
+
+Your project folder should have the following structure:
+
+frontend/
+├─ home.css
+├─ home.js
+├─ index.html
+├─ signup.html
+├─ signin.html
+backend/
+├─ server.js
+├─ users.json      (created automatically after first signup)
+├─ movies.json     (sample movie data)
+package.json
+
+
+Descriptions of key files:
+
+frontend/index.html – Main page with search bar and movie list
+
+frontend/home.js – Frontend logic: search, display, navbar, login state
+
+frontend/home.css – Styling for layout, navbar, cards, buttons
+
+frontend/signup.html / signin.html – User authentication pages
+
+backend/server.js – Node.js backend with movie and user API
+
+backend/users.json – Stores user credentials (hashed passwords)
+
+backend/movies.json – Stores movie data for testing/search
+
+4. Install Backend Dependencies
+
+Navigate to your backend folder (or project root if server.js is there) and run:
+
+npm install express bcrypt cors
+
+
+This will install:
+
+express – Web server framework
+
+bcrypt – Password hashing
+
+cors – Enable cross-origin requests from frontend
+
+5. Run Backend Server
+
+Start the backend server:
+
+node backend/server.js
+
+
+The server will run on http://localhost:5000
+
+Backend routes available:
+
+POST /signup – Sign up a new user
+
+POST /signin – Sign in an existing user
+
+GET /search?title=<movie_name> – Search for movies by title
+
+6. Open Frontend
+
+You have two options:
+
+Option 1: Open HTML directly
+
+Open frontend/index.html in your web browser.
+
+This works but may have restrictions on some fetch requests in modern browsers.
+
+Option 2: Use a local development server (recommended)
+
+Install a lightweight server (e.g., VS Code Live Server extension) or use npx serve:
+
+cd frontend
+npx serve
+
+
+This will start a server on http://localhost:3000
+ (or another port)
+
+Navigate to this URL in your browser to access the site.
+
+7. Using the Website
+
+Sign Up / Sign In
+
+Navigate to Sign Up to create a new account.
+
+Use Sign In to log in with your credentials.
+
+Logged-in users see a welcome message and can log out.
+
+Search Movies
+
+Enter a movie or series title in the search bar.
+
+Click Search to display results from the backend.
+
+Movie Details
+
+Each movie card shows:
+
+Title
+
+Platform
+
+Availability (subscription, rent, buy, free)
+
+Price
+
+Quality
+
+Region
+
+Click Watch on Platform to go to the external link.
+
+8. Adding Sample Data
+
+Populate backend/movies.json with sample movies in the format:
+
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "platform": "Netflix",
+    "availability": "subscription",
+    "price": null,
+    "quality": ["SD", "HD", "4K"],
+    "region": "US",
+    "link": "https://www.netflix.com/watch/70131314",
+    "poster": "https://image-link.jpg"
+  }
+]
+
+
+This enables the search and display functionality.
+
+9. Notes
+
+Backend must be running for search, signup, and signin to work.
+
+Frontend and backend can run on different ports (3000 for frontend, 5000 for backend).
+
+User login state is stored in localStorage in the browser.
+
+Movies and users are persisted in JSON files.
