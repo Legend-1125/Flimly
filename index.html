@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WatchCompare</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🎬 WatchCompare</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#search">Search</a>
+        <a href="#filters">Filters</a>
+        <a href="#">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>🎬 Where to Watch</h1>
+
+    <!-- Search & Filters -->
+    <div class="controls" id="filters">
+      <input id="search" type="text" placeholder="Search for a movie or series..." />
+      <select id="platformFilter">
+        <option value="">All Platforms</option>
+        <option value="Netflix">Netflix</option>
+        <option value="Prime">Prime Video</option>
+        <option value="Disney+">Disney+</option>
+        <option value="Hulu">Hulu</option>
+        <option value="Max">Max</option>
+        <option value="Apple TV">Apple TV</option>
+        <option value="Google Play">Google Play</option>
+        <option value="Vudu">Vudu</option>
+        <option value="YouTube">YouTube</option>
+        <option value="Peacock">Peacock</option>
+        <option value="Paramount+">Paramount+</option>
+      </select>
+
+      <select id="availabilityFilter">
+        <option value="">All Types</option>
+        <option value="subscription">Subscription</option>
+        <option value="rent">Rent</option>
+        <option value="buy">Buy</option>
+        <option value="free">Free</option>
+      </select>
+
+      <select id="qualityFilter">
+        <option value="">All Qualities</option>
+        <option value="SD">SD</option>
+        <option value="HD">HD</option>
+        <option value="4K">4K</option>
+      </select>
+
+      <select id="regionFilter">
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+      </select>
+
+      <button onclick="loadMovies()">Search</button>
+    </div>
+
+    <!-- Results -->
+    <div id="movieList" class="movie-grid"></div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

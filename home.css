@@ -1,0 +1,185 @@
+/* ---------------- Body & Container ---------------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  width: 100%;
+  background-color: #141414;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navbar .logo {
+  color: #e50914;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+}
+
+/* ---------------- Controls (Search Bar) ---------------- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.controls input,
+.controls select {
+  flex: 1;
+  min-width: 150px;
+}
+
+.controls button {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background-color: #f40612;
+}
+
+/* ---------------- Movie Grid ---------------- */
+.movie-grid,
+#movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---------------- Movie Card ---------------- */
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #1c1c1c;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* ---------------- Movie Card Image ---------------- */
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.movie-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------------- Overlay Info ---------------- */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s, opacity 0.3s;
+  padding: 10px;
+  font-size: 0.85rem;
+}
+
+.movie-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Overlay content */
+.overlay h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  margin: 2px 0;
+  color: #ccc;
+}
+
+.overlay button {
+  width: 100%;
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.overlay button:hover {
+  background-color: #f40612;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
