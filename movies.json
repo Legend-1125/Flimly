@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Spider-Man: No Way Home",
+    "platform": "Netflix",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Spider-Man",
+    "link": "https://www.netflix.com/watch/12345"
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "platform": "Google Play",
+    "availability": "rent",
+    "price": 3.99,
+    "quality": ["SD", "HD"],
+    "region": "US",
+    "rentalWindow": "48 hours",
+    "poster": "https://via.placeholder.com/180x270?text=Spider-Man",
+    "link": "https://play.google.com/store/movies/details?id=xyz"
+  },
+  {
+    "title": "The Batman",
+    "platform": "HBO Max",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=The+Batman",
+    "link": "https://www.hbomax.com/the-batman"
+  },
+  {
+    "title": "The Batman",
+    "platform": "Amazon Prime",
+    "availability": "rent",
+    "price": 4.99,
+    "quality": ["HD"],
+    "region": "US",
+    "rentalWindow": "48 hours",
+    "poster": "https://via.placeholder.com/180x270?text=The+Batman",
+    "link": "https://www.amazon.com/gp/video/detail/B09XYZ"
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "platform": "Disney+",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Doctor+Strange",
+    "link": "https://www.disneyplus.com/movies/doctor-strange"
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "platform": "Vudu",
+    "availability": "buy",
+    "price": 14.99,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Doctor+Strange",
+    "link": "https://www.vudu.com/movies/doctor-strange"
+  },
+  {
+    "title": "Stranger Things",
+    "platform": "Netflix",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Stranger+Things",
+    "link": "https://www.netflix.com/watch/80057281"
+  },
+  {
+    "title": "The Mandalorian",
+    "platform": "Disney+",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Mandalorian",
+    "link": "https://www.disneyplus.com/series/the-mandalorian"
+  },
+  {
+    "title": "Dune",
+    "platform": "HBO Max",
+    "availability": "subscription",
+    "price": 0,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": null,
+    "poster": "https://via.placeholder.com/180x270?text=Dune",
+    "link": "https://www.hbomax.com/dune"
+  },
+  {
+    "title": "Dune",
+    "platform": "Apple TV",
+    "availability": "rent",
+    "price": 5.99,
+    "quality": ["HD", "4K"],
+    "region": "US",
+    "rentalWindow": "48 hours",
+    "poster": "https://via.placeholder.com/180x270?text=Dune",
+    "link": "https://tv.apple.com/movie/dune"
+  }
+]
